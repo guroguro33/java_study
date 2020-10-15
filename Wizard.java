@@ -30,6 +30,9 @@ public class Wizard {
 	}
 	
 	public void setName(String name) {
+		if(name.length() < 4){
+			throw new IllegalArgumentException("エラーメッセージ");
+		}
 		this.name = name;
 	}
 	

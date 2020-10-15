@@ -5,6 +5,9 @@ public class Wand {
 	private double power; // 杖の魔力
 	
 	public void setName(String name) {
+		if(name.length() < 4){
+			throw new IllegalArgumentException("エラーメッセージ");
+		}
 		this.name = name;
 	}
 	
