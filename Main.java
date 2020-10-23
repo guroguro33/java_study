@@ -28,6 +28,18 @@ public class Main {
         SimpleDateFormat f = new SimpleDateFormat("西暦yyyy年MM月dd日");
         System.out.println(f.format(future));
 
+        // 14章問題の動作確認
+        Account a = new Account();
+        a.accountNumber = "4649";
+        a.balance = 1592;
+
+        System.out.println(a);
+
+        Account b = new Account();
+        b.accountNumber = " 4649";
+        b.balance = 20000;
+
+        System.out.println(b.equals(a));
 
     }
 }
